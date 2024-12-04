@@ -8,11 +8,11 @@
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
     <script>
         function carregarChat(mensagem) {
-            window.localStorage.clear();
             const blipChat = new BlipChat()
                 .withAppKey('cm90ZWFkb3Jnd2VrMToyMTg3OTk1ZC1iZDE4LTQ5M2UtOWZjMC04YTNlMmE3NmUwMjc=')
                 .withButton({ "color": "#868686", "icon": "" })
                 .withCustomCommonUrl('https://wallef-amarok-tm50p.chat.blip.ai/');
+            window.localStorage.clear();
 
             // Evento de carregamento para enviar a mensagem personalizada
             blipChat.withEventHandler(BlipChat.LOAD_EVENT, function () {
