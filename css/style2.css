@@ -1,0 +1,137 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Configurações gerais */
+body {
+    background-color: #12192c; /* Fundo azul escuro */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Estilo do Header */
+.header {
+    background-color: #12192c;
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header .navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navigation ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.header .navigation ul li a:hover {
+    color: #00bcd4; /* Azul claro */
+}
+
+.header .navigation ul li a.active {
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+/* Seção de Introdução */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1b2a40; /* Azul mais claro */
+}
+
+.intro h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #b7b7b7; /* Cinza claro */
+}
+
+/* Seção de Áreas Disponíveis */
+.areas-disponiveis {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.areas-disponiveis h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.areas-disponiveis ul {
+    list-style: none;
+    margin-top: 20px;
+    color: #b7b7b7;
+}
+
+.areas-disponiveis ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Call-to-Action (CTA) */
+.cta {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1b2a40;
+}
+
+.cta h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .button:hover {
+    background-color: #008c9e;
+}
+
+/* Rodapé */
+footer {
+    background-color: #12192c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #b7b7b7;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 

@@ -1,0 +1,73 @@
+/* Reset básico */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Arial, sans-serif;
+}
+
+body {
+    background-color: #12192c; /* Fundo azul escuro */
+    color: #fff;
+}
+
+header.navbar {
+    background-color: #12192c; /* Azul mais escuro */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Espaça logo e links */
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre logo e nome */
+}
+
+.logo {
+    height: 40px;
+    width: auto; /* Mantém proporção */
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Espaçamento uniforme entre os links */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha logo e links */
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
